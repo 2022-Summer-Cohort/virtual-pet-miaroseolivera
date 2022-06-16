@@ -39,29 +39,24 @@ public class VirtualPetShelter {
         for (VirtualPetApp petsAreSnuggly : petStorage) {
             petsAreSnuggly.giveSnugs();
         }
-        System.out.println("You give all the pets some snugs :)");
     }
 
-    public void newPet(String newPetName, String typeOfNewPet) {
-        petStorage.add(new VirtualPetApp(newPetName, 50, 50 ,50 , typeOfNewPet, false));
+    ArrayList<OrganicPet> organicPetStorage = new ArrayList<OrganicPet>();
+    ArrayList<RoboticPet> roboticPetStorage = new ArrayList<RoboticPet>();
+
+    public void addCurrentPetsToShelter() {
+        RoboticDog pet1 = new RoboticDog("Bodhi");
+        OrganicDog pet2 = new OrganicDog("Tucker");
+        RoboticCat pet3 = new RoboticCat("Murphy");
+        OrganicCat pet4 = new OrganicCat("Mac");
+        roboticPetStorage.add(pet1);
+        organicPetStorage.add(pet2);
+        roboticPetStorage.add(pet3);
+        roboticPetStorage.add(pet4);
     }
 
-    public void adoptNewPet(String newPetToAdopt) {
-        petStorage.removeIf(pet -> pet.getName().equalsIgnoreCase(newPetToAdopt));
-    }
-
-    public void tickAll() {
-        for (VirtualPetApp turnTick : petStorage) {
-            turnTick.tick();
-        }
-    }
-
-    public void allPetStatLimiter() {
-        for (VirtualPetApp statNormalize : petStorage) {
-            statNormalize.intLimiter();
-        }
-    }
-
-    public void Play() {
+    public void resetShelter () {
+        organicPetStorage.removeAll(organicPetStorage);
+        roboticPetStorage.removeAll(roboticPetStorage);
     }
 }

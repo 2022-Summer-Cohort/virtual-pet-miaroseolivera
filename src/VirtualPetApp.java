@@ -11,7 +11,7 @@ public class VirtualPetApp {
         private String boyOrGirl;
         private boolean isSadBoi;
 
-        public VirtualPetApp(String name, int i, int i1, int i2, String typeOfPet, boolean b) {
+        public VirtualPetApp(String name, int hunger, int thirst, int age, String typeOfPet, String boyOrGirl, String ofPet) {
             this.name = name;
             this.typeOfPet = typeOfPet;
 //            this.hunger = hunger;
@@ -31,14 +31,7 @@ public class VirtualPetApp {
             this.isSadBoi = isSadBoi;
             }
 
-    public VirtualPetApp(String name, int hunger, int thirst, int age, String boyOrGirl, String boyOrGirl1, String typeOfPet) {
-    }
-
-    public VirtualPetApp() {
-        
-    }
-
-    public String getName() {
+            public String getName() {
             return name;
         }
 
@@ -97,7 +90,4 @@ public class VirtualPetApp {
                         age = 0;
                     }
         }
-
-    public void Play() {
-    }
 }
