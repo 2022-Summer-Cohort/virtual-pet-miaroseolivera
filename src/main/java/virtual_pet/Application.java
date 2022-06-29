@@ -394,7 +394,29 @@ public class Application {
     // -----------------------------SCOREBOARD---------------------------------------------------------------------
     private static void scoreboard(VirtualPetShelter petShelter) {
 //        fixing scoreboard right now
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("V I R T U A L - P E T - S H E L T E R --- P E T - S C O R E B O A R D");
+        System.out.println("---------------------------------------------------------------------");
 
+            for (OrganicPet shelterPet : petShelter.organicPetStorage) {
+                System.out.println(shelterPet.getName() + " : " +
+                        "Pet Description: " + shelterPet.getTypeOfPet() +
+                        "Bathroom: " + shelterPet.getBathroom() +
+                        "Hunger: " + shelterPet.getHunger() +
+                        "Thirst: " + shelterPet.getThirst() +
+                        "Boredom: " + shelterPet.getBoredom() +
+                        "Tiredness: " + shelterPet.getTiredness() +
+                        "Cleanliness: " + shelterPet.getCleanliness()
+                );
+            }
+
+        for (RoboticPet shelterPet : petShelter.roboticPetStorage) {
+            System.out.println(shelterPet.getName() + " : " +
+                    "Battery Level: " + shelterPet.getBattLevel() +
+                    "Condition: " + shelterPet.getConditionLevel() +
+                    "Cleanliness: " + shelterPet.getCleanliness()
+            );
+        }
     }
     //----------------------END SCOREBOARD--------------------------------------------------------------------------
 }
