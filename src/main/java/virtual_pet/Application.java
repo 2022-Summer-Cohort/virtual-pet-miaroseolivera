@@ -393,7 +393,7 @@ public class Application {
 
     // -----------------------------SCOREBOARD---------------------------------------------------------------------
     private static void scoreboard(VirtualPetShelter petShelter) {
-//        line 48
+//        fixing scoreboard right now
 
     }
     //----------------------END SCOREBOARD--------------------------------------------------------------------------
