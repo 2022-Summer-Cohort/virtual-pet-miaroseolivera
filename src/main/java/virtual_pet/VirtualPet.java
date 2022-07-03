@@ -3,24 +3,21 @@ package virtual_pet;
 public class VirtualPet implements Ticks {
 
     private String name;
-    private String description;
+    private String typeOfPet;
     public int cleanliness;
 
-    public VirtualPet(String name, String description, int cleanliness) {
+    public VirtualPet(String name, String typeOfPet, int cleanliness) {
         this.name = name;
-        this.description = description;
+        this.typeOfPet = typeOfPet;
         this.cleanliness = cleanliness;
     }
-
-
-
 
     public String getName() {
         return name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getTypeOfPet() {
+        return typeOfPet;
     }
 
     public void cleanCages() {

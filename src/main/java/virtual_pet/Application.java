@@ -99,11 +99,11 @@ public class Application {
         System.out.println("We are so happy to hear you found a FURever friend at the shelter today! Which of our adorable pets will you be adopting?");
         while (true) {
             for (OrganicPet shelterPet : petShelter.organicPetStorage) {
-                System.out.println(shelterPet.getName() + " : " + shelterPet.getDescription());
+                System.out.println(shelterPet.getName() + " : " + shelterPet.getTypeOfPet());
             }
 
             for (RoboticPet shelterPet : petShelter.roboticPetStorage) {
-                System.out.println(shelterPet.getName() + " : " + shelterPet.getDescription());
+                System.out.println(shelterPet.getName() + " : " + shelterPet.getTypeOfPet());
             }
 
             String petToAdopt = input.nextLine();
@@ -243,7 +243,7 @@ public class Application {
         System.out.println("Which pet needs food?");
         while (petNotPlayedWith) {
             for (OrganicPet shelterPet : petShelter.organicPetStorage) {
-                System.out.println(shelterPet.getName() + " : " + shelterPet.getDescription());
+                System.out.println(shelterPet.getName() + " : " + shelterPet.getTypeOfPet());
             }
             input.nextLine();
             String feedPet = input.nextLine();
@@ -274,11 +274,11 @@ public class Application {
         System.out.println("Please choose a pet to play with!");
         while (petNotPlayedWith) {
             for (OrganicPet shelterPet : petShelter.organicPetStorage) {
-                System.out.println(shelterPet.getName() + " : " + shelterPet.getDescription());
+                System.out.println(shelterPet.getName() + " : " + shelterPet.getTypeOfPet());
             }
 
             for (OrganicPet shelterPet : petShelter.organicPetStorage) {
-                System.out.println(shelterPet.getName() + " : " + shelterPet.getDescription());
+                System.out.println(shelterPet.getName() + " : " + shelterPet.getTypeOfPet());
             }
 
             String playWithPet = input.nextLine();
@@ -318,7 +318,7 @@ public class Application {
         System.out.println("Which pet is thirsty?");
         while (petNotPlayedWith) {
             for (OrganicPet shelterPet : petShelter.organicPetStorage) {
-                System.out.println(shelterPet.getName() + " : " + shelterPet.getDescription());
+                System.out.println(shelterPet.getName() + " : " + shelterPet.getTypeOfPet());
             }
             String waterPet = input.nextLine();
             boolean foundPet = false;
@@ -376,11 +376,11 @@ public class Application {
         System.out.println("Howdy, friend! Welcome, and thanks for stopping by the Virtual Pet Shelter! Please choose a pet to interact with :) ");
         System.out.println("These are all of the pets currently in the shelter: ");
             for (OrganicPet shelterPet : petShelter.organicPetStorage) {
-                System.out.println(shelterPet.getName() + " : " + shelterPet.getDescription());
+                System.out.println(shelterPet.getName() + " : " + shelterPet.getTypeOfPet());
             }
 
             for (RoboticPet shelterPet : petShelter.roboticPetStorage) {
-            System.out.println(shelterPet.getName() + " : " + shelterPet.getDescription());
+            System.out.println(shelterPet.getName() + " : " + shelterPet.getTypeOfPet());
             }
 
         System.out.println("Pet Stats: ");
@@ -400,7 +400,7 @@ public class Application {
 
             for (OrganicPet shelterPet : petShelter.organicPetStorage) {
                 System.out.println(shelterPet.getName() + " : " +
-                        "Pet Description: " + shelterPet.getDescription() +
+                        "Pet Description: " + shelterPet.getTypeOfPet() +
                         "Bathroom: " + shelterPet.getBathroom() +
                         "Hunger: " + shelterPet.getHunger() +
                         "Thirst: " + shelterPet.getThirst() +

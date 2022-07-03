@@ -31,7 +31,8 @@ public class VirtualPetApp {
             this.isSadBoi = isSadBoi;
             }
 
-            public String getName() {
+
+    public String getName() {
             return name;
         }
 
@@ -84,10 +85,10 @@ public class VirtualPetApp {
                 
             if (thirst < 0) {
                     thirst = 0;
-                }
+            }
                 
             if (age < 0) {
                         age = 0;
-                    }
+            }
         }
 }
