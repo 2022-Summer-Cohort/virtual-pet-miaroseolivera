@@ -1,33 +1,41 @@
 package virtual_pet;
 
-public class VirtualPet {
-    public String getTypeOfPet;
+public class VirtualPet implements Ticks {
+
+    private String name;
+    private String description;
+    public int cleanliness;
 
     public VirtualPet(String name, String description, int cleanliness) {
+        this.name = name;
+        this.description = description;
+        this.cleanliness = cleanliness;
     }
 
-    public VirtualPet() {
 
-    }
 
 
     public String getName() {
-        return getName();
+        return name;
     }
 
     public String getDescription() {
-        return getDescription();
-    }
-
-    public String getTypeOfPet() {
-        String typeOfPet = new String();
-        return typeOfPet;
+        return description;
     }
 
     public void cleanCages() {
+       cleanliness += 10;
     }
 
     public int getCleanliness() {
-        return 0;
+        return cleanliness;
+    }
+
+    @Override
+    public void tick() {
+        cleanliness -= 5;
+        if (cleanliness > 100) {
+            cleanliness = 100;
+        }
     }
 }

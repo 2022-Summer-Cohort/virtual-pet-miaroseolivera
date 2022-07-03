@@ -11,15 +11,15 @@ public class VirtualPetApp {
         private String boyOrGirl;
         private boolean isSadBoi;
 
-        public VirtualPetApp(String name, int hunger, int thirst, int age, String typeOfPet, String boyOrGirl, String ofPet) {
-            this.name = name;
-            this.typeOfPet = typeOfPet;
+//        public VirtualPetApp(String name, int hunger, int thirst, int age, String typeOfPet, String boyOrGirl, String ofPet) {
+//            this.name = name;
+//            this.typeOfPet = typeOfPet;
 //            this.hunger = hunger;
 //            this.thirst = thirst;
 //            this.age = age;
 //            this.boyOrGirl = boyOrGirl;
-//            this.sadBoi = isSadBoi;
-        }
+//            this.isSadBoi = isSadBoi;
+//        }
 
         public VirtualPetApp(String name, String typeOfPet, int hunger, int thirst, int age, String boyOrGirl, boolean isSadBoi) {
             this.name = name;
